@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXO - Building Connecting</title>
+  <link rel="stylesheet" href="Nexo.css">
+</head>
+<body>
+
+
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+
+  <nav class="menu">
+    <a href="#contactos" onclick="toggleMenu()">2. Contactos</a>
+    <a href="#quienes-somos" onclick="toggleMenu()">1. Quiénes somos</a>
+    <a href="#ayuda" onclick="toggleMenu()">3. Ayuda</a>
+  </nav>
+
+
+  <section class="main" id="home">
+    <div class="logo">
+      <div class="logo-subtext">BUILDING CONNECTING</div>
+      <div class="logo-text">NEXO</div>
+    </div>
+
+    <div class="buscador">
+      <input type="text" placeholder="Buscar...">
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section class="seccion" id="quienes-somos">
+    <div class="contenido-seccion">
+      <h2>1. Quiénes somos</h2>
+      <p>
+        En <strong>NEXO</strong> conectamos personas y tecnología. 
+        Somos una plataforma dedicada a construir amistades dentro de la institucion
+        y buscando solucionar la poca interacción entre alumnos.
+      </p>
+      <p>
+        Nuestro objetivo es simplificar la comunicación y la falta de comunicacion que
+        existe en el liceo, creando Machets por internet.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <h3>+500</h3>
+          <p>Usuarios activos</p>
+        </div>
+        <div class="stat">
+          <h3>+50</h3>
+          <p>Proyectos conectados</p>
+        </div>
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Soporte activo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="contactos">
+    <div class="contenido-seccion">
+      <h2>2. Contactos</h2>
+      <p>¿Tienes dudas o quieres trabajar con nosotros? Escríbenos:</p>
+      
+      <div class="contacto-grid">
+        <div class="contacto-card">
+          <h3>Email</h3>
+          <p>nexoaml.sip@nexo.com</p>
+        </div>
+        <div class="contacto-card">
+          <h3>Teléfono</h3>
+          <p>+56 9 5950 8897</p>
+        </div>
+        <div class="contacto-card">
+          <h3>Ubicación</h3>
+          <p>Santiago, Chile</p>
+        </div>
+      </div>
+
+      <form class="formulario" action="https://formspree.io/f/mpqkglwb" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+
+        <input type="hidden" name="_next" value="index.html#contactos">
+
+        <input type="hidden" name="_replyto" value="">
+        <input type="hidden" name="_subject" value="Nuevo contacto desde NEXO">
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="seccion" id="ayuda">
+    <div class="contenido-seccion">
+      <h2>3. Ayuda</h2>
+      <p>Preguntas frecuentes sobre NEXO:</p>
+      
+      <div class="faq">
+        <details>
+          <summary>¿Cómo empiezo a usar NEXO?</summary>
+          <p>Necesitas iniciar un registro por la aplicacion, y despues de eso tienes el libre acceso a todas nuestrsa funciones.</p>
+        </details>
+        
+        <details>
+          <summary>¿Es gratis usar la plataforma?</summary>
+          <p>Sí, todas las funciones básicas de NEXO son 100% gratuitas.</p>
+        </details>
+        
+        <details>
+          <summary>¿Cómo puedo reportar un problema?</summary>
+          <p>Ve a la sección Contactos y envíanos un mensaje detallando el error.</p>
+        </details>
+        
+        <details>
+          <summary>¿Mis datos están seguros?</summary>
+          <p>Sí. Usamos cifrado TLS y no compartimos tu información con terceros.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 NEXO - Building Connecting. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="Nexo.js"></script>
+</body>
+</html>
